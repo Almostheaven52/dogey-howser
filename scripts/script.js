@@ -17,8 +17,7 @@ $(document).ready(function () {
 
 
   $("#dogeDiv").draggable(
-    {
-      containment: "#dogeHouse",
+    { containment: "#dogeHouse", 
       scroll: false,
       stop: function () {
         // wowCount = wowCount + 1; 
@@ -38,13 +37,10 @@ $(document).ready(function () {
   }
   );
 
+  let buttSpeak = "Oh? I dont actually do anything. I'm just here for the lols.";
   
-
-  let userGreeting = "Hello there, "; 
-
   $("button").click(function () {
-    userGreeting += $("#fname").val();
-
-    $("#greetingOutput").text(userGreeting);
+    console.log("Clicked thee button");
+    alert("I dont actually do anything. I'm just here for the lols.")
   });
 });
